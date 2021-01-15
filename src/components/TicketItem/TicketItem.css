@@ -1,0 +1,52 @@
+
+.item {
+    width: 100%;
+    display: flex;
+    margin-bottom: 2%;
+    border: 1px solid lightgray;
+    border-radius: 0.5rem;
+    background-color: #fff;
+}
+
+.item__left {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid lightgray;
+    padding: 2rem;
+}
+
+
+.item__company-logo {
+    width: 160px;
+    height: 60px;
+    margin-bottom: 1rem;
+}
+
+
+.item__right {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.time,
+.place,
+.date {
+    display: flex;
+    justify-content: space-between;
+}
+
+.time__departure,
+.time__arrivals {
+    color: darkgray;
+    font-size: 2rem;
+}
+
+.time__stops {
+    color: darkgray;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}

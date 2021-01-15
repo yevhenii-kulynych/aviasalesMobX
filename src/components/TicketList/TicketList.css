@@ -1,0 +1,6 @@
+
+.ticket-list {
+    width: 68%;
+    display: flex;
+    flex-direction: column;
+}

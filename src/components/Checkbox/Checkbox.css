@@ -1,0 +1,21 @@
+
+.input-wrap {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 1.5rem;
+}
+
+.text-hover {
+    text-transform: uppercase;
+    color: #007bff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hovered {
+    background-color: rgba(242, 252, 255, 0.856);
+
+}

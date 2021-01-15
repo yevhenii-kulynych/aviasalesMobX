@@ -1,0 +1,28 @@
+
+
+.modal-body > .item .item__right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.modal-body  .item__right {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.modal-body .time,
+.modal-body .place,
+.modal-body .date {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-body .time__departure,
+.modal-body .time__arrivals {
+    color: darkgray;
+    font-size: 2rem;
+}

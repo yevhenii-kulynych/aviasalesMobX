@@ -1,4 +1,4 @@
-import { makeAutoObservable, observable, action } from "mobx";
+import { makeObservable, observable, action } from "mobx";
 
 class FormStore {
 
@@ -6,7 +6,7 @@ class FormStore {
 
     constructor() {
 
-        makeAutoObservable(this, {
+        makeObservable(this, {
             initialState: observable,
             setData: action,
             eraseData: action

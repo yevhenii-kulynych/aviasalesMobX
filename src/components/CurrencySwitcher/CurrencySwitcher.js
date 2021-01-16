@@ -18,9 +18,9 @@ const CurrencySwitcher = observer(() => {
         <div className="container currency pt-3 pb-3">
             <h2>Валюта</h2>
             <ButtonGroup className="mr-2" aria-label="Second group">
-                <Button onClick={ () => { TicketsStore.changeCurrency(RUB) } }>{ RUB }</Button>
-                <Button onClick={ () => { TicketsStore.changeCurrency(USD) } }>{ USD }</Button>
-                <Button onClick={ () => { TicketsStore.changeCurrency(EUR) } }>{ EUR }</Button>
+                <Button onClick={ () => TicketsStore.changeCurrency(RUB) }>{ RUB }</Button>
+                <Button onClick={ () => TicketsStore.changeCurrency(USD) }>{ USD }</Button>
+                <Button onClick={ () => TicketsStore.changeCurrency(EUR) }>{ EUR }</Button>
             </ButtonGroup>
         </div>
     )

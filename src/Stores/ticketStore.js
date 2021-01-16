@@ -1,5 +1,5 @@
 import axios from "axios";
-import { makeAutoObservable, observable, action, runInAction } from "mobx";
+import { makeObservable, observable, action, runInAction } from "mobx";
 
 
 class TicketsStore {
@@ -7,19 +7,20 @@ class TicketsStore {
     tickets = [];
     isChecked = { inputs: [] };
     currencyRates = [];
-    initialCurrency = { name: 'RUB', ratio: 1 }
+    initialCurrency = { name: 'RUB', ratio: 1 };
 
     constructor() {
 
-        makeAutoObservable(this, {
+        makeObservable(this, {
             tickets: observable,
             isChecked: observable,
             currencyRates: observable,
+            initialCurrency: observable,
             fetchTickets: action,
             filterTickets: action.bound,
             setOnlyOne: action,
-            fetchCurrencyRates:action,
-            changeCurrency:action
+            fetchCurrencyRates: action,
+            changeCurrency: action,
         })
     }
 

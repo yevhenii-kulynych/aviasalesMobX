@@ -1,27 +1,23 @@
 import React, { useState } from "react";
 import OwnButton from "../OwnButton/OwnButton";
-import { useSelector, useDispatch } from 'react-redux';
 import Popup from '../Popup/Popup'
 import logo from "../../assets/company.png";
-import { Spinner } from 'react-bootstrap';
 import "./TicketItem.css";
-import { eraseFormData } from "../../redux/actions/setFormData";
+import { observer } from "mobx-react";
+import TicketStore from '../../Stores/ticketStore';
 
-const TicketItem = ({ ticket }) => {
+const TicketItem = observer(({ ticket }) => {
 
     const [show, setShow] = useState(false);
     const [success, setSuccess] = useState(false);
-    const loader = useSelector(state => state.loader);
-    const dispatch = useDispatch();
 
-    const currency = useSelector(state => state.tickets.initialCurrency);
+    const currency = TicketStore.initialCurrency;
     const currentPrice = Math.floor(ticket.price * currency.ratio);
 
     const handleClose = () => {
 
         setShow(false);
         setSuccess(false);
-        dispatch(eraseFormData())
     };
     const handleShow = () => setShow(true);
 
@@ -45,14 +41,10 @@ const TicketItem = ({ ticket }) => {
                 <div className="item__left">
                     <img className="item__company-logo" src={ logo } alt={ 'company' }/>
                     {
-                        loader
-                        ?
-                            <OwnButton 
-                                price={ `${currentPrice} ${currency.name}` } 
-                                handleShow={ handleShow } 
-                            />
-                        :
-                            <Spinner animation="border" variant="primary" />
+                        <OwnButton
+                            price={ `${currentPrice} ${currency.name}` }
+                            handleShow={ handleShow }
+                        />
                     }
 
                 </div>
@@ -81,6 +73,6 @@ const TicketItem = ({ ticket }) => {
                 price={ `${currentPrice} ${currency.name}` }/>
         </>
     )
-}
+})
 
 export default TicketItem;

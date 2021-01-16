@@ -14,9 +14,9 @@ function App() {
       <Header></Header>
       <Sidebar>
         <CurrencySwitcher />
-        <StopsFilter />
+        <StopsFilter/>
       </Sidebar>
-      <TicketList />
+      <TicketList/>
     </div>
   );
 }

@@ -18,7 +18,7 @@ export const getCurrencyRatesAsync = () => {
     axios.get('https://api.exchangeratesapi.io/latest?base=RUB')
     .then(data => {
 
-      dispatch(getCurrencyRates(data.data.rates))
+      dispatch(getCurrencyRates(data.rates))
       dispatch(isLoading())
     }).catch(err => {
       throw err

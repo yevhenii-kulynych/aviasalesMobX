@@ -1,25 +1,21 @@
 import React, { useState, useRef, useEffect }  from 'react';
-import { useDispatch } from "react-redux";
-import { filterStops, resetToOne } from "../../redux/actions/filterStops";
 import { Form } from 'react-bootstrap';
-import './Checkbox.css'
+import './Checkbox.css';
+import { observer } from "mobx-react";
 
-const Checkbox = ({ text, name, id, stops, isChecked }) => {
+const Checkbox = observer(({setOnlyOne, filterAction, text, name, id, stops, isChecked }) => {
 
     const [isShown, setIsShown] = useState(false);
     const inp = useRef(null)
 
-    const dispatch = useDispatch();
-    const filteringByStops = value => dispatch(filterStops(value))
-
     const checkboxHandler = event => {
 
         if (event.target.checked) {
-            
-            filteringByStops(stops)
+
+            filterAction(stops)
         } else {
 
-            filteringByStops(stops)
+            filterAction(stops)
         }
     }
 
@@ -43,7 +39,7 @@ const Checkbox = ({ text, name, id, stops, isChecked }) => {
             {
                 isShown && (
                     <p className="text-hover"
-                       onClick={ () => { dispatch(resetToOne(stops)) } }
+                       onClick={ () => { setOnlyOne(stops) } }
                     >
                         Только
                     </p>
@@ -51,6 +47,6 @@ const Checkbox = ({ text, name, id, stops, isChecked }) => {
             }
         </div>
     )
-}
+})
 
 export default Checkbox;

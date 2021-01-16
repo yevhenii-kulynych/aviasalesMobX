@@ -5,9 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90897ea6-09d7-4676-8e3d-574d52c05277" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Checkbox/Checkbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Checkbox/Checkbox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CurrencySwitcher/CurrencySwitcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CurrencySwitcher/CurrencySwitcher.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FormComponent/FormComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormComponent/FormComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Popup/Popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Popup/Popup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/StopsFilter/Stopsfilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StopsFilter/Stopsfilter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TicketItem/TicketItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TicketItem/TicketItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TicketList/TicketList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TicketList/TicketList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/actions/getCurrencyRates.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/getCurrencyRates.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,8 +70,14 @@
     <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v14.15.4/bin/node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/mobx/Stores" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -111,7 +127,9 @@
       <workItem from="1610619290799" duration="11967000" />
       <workItem from="1610632412597" duration="727000" />
       <workItem from="1610709946529" duration="523000" />
-      <workItem from="1610723534707" duration="299000" />
+      <workItem from="1610723534707" duration="1147000" />
+      <workItem from="1610783480550" duration="2203000" />
+      <workItem from="1610790103201" duration="17846000" />
     </task>
     <servers />
   </component>

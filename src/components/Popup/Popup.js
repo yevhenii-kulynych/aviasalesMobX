@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import { Modal } from "react-bootstrap";
 import FormComponent from "../FormComponent/FormComponent"
 import "./Popup.css";
-import { useSelector } from "react-redux";
+import FormStore from '../../Stores/formStore'
+import { observer } from "mobx-react";
 
-const Popup = ({success, changeSuccess, data, isShow, handleClose, price }) => {
+const Popup = observer(({success, changeSuccess, data, isShow, handleClose, price }) => {
 
-    const initialState = useSelector(state => state.form)
+    const initialState = FormStore.initialState;
 
     const [initialFormState] = useState({
         email: '',
@@ -79,6 +80,6 @@ const Popup = ({success, changeSuccess, data, isShow, handleClose, price }) => {
           </Modal>
         </>
       );
-}
+})
 
 export default Popup;

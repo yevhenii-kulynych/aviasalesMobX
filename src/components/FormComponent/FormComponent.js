@@ -1,14 +1,13 @@
 import React from 'react';
-import { setFormData } from "../../redux/actions/setFormData";
-import { useDispatch } from "react-redux";
 import Input from '../Input/Input';
 import { Formik, Form } from "formik";
 import * as Yup from 'yup';
 import "./FormComponent.css";
+import FormStore from '../../Stores/formStore'
+import { observer } from "mobx-react";
 
-const FormComponent = ({initialState, changeSuccess, closeHandler }) => {
 
-    const dispatch = useDispatch();
+const FormComponent = observer(({initialState, changeSuccess, closeHandler }) => {
 
     return (
         <Formik
@@ -42,7 +41,7 @@ const FormComponent = ({initialState, changeSuccess, closeHandler }) => {
             onSubmit={fields => {
 
                 changeSuccess(true)
-                dispatch(setFormData(fields))
+                FormStore.setData(fields)
             }}
         >
             {
@@ -102,6 +101,6 @@ const FormComponent = ({initialState, changeSuccess, closeHandler }) => {
             }
         </Formik>
     )
-}
+})
 
 export default FormComponent;

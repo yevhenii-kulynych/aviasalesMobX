@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import { Modal } from "react-bootstrap";
 import FormComponent from "../FormComponent/FormComponent"
-import "./Popup.css";
-import FormStore from '../../Stores/formStore'
 import { observer } from "mobx-react";
+import { useRootStoreContext } from "../../context/StoreContext";
+import "./Popup.css";
 
 const Popup = observer(({success, changeSuccess, data, isShow, handleClose, price }) => {
 
-    const initialState = FormStore.initialState;
+    const formContext = useRootStoreContext();
+    const initialState = formContext.formStore.initialState;
 
     const [initialFormState] = useState({
         email: '',

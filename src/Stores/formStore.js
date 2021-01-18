@@ -23,4 +23,4 @@ class FormStore {
     }
 }
 
-export default new FormStore();
+export default FormStore;

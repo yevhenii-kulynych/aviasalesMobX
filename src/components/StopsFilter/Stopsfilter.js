@@ -3,9 +3,12 @@ import { Form, Row, Col } from 'react-bootstrap';
 import Checkbox from '../Checkbox/Checkbox'
 import './StopsFilter.css';
 import { observer } from "mobx-react";
-import TicketsStore from '../../Stores/ticketStore'
+import { useRootStoreContext } from "../../context/StoreContext";
+
 
 const StopsFilter = observer(() => {
+
+    const tickets = useRootStoreContext()
 
     return (
         <div className="filter p-3">
@@ -13,7 +16,7 @@ const StopsFilter = observer(() => {
             <Form.Group as={ Row }>
                 <Col sm={ 12 }>
                     {
-                        TicketsStore.isChecked.inputs.map(el => {
+                        tickets.ticketStore.isChecked.inputs.map(el => {
 
                             const text = el.name === 'all'
                                 ? 'Все'
@@ -30,8 +33,8 @@ const StopsFilter = observer(() => {
                                 id={ `formHorizontal-${ el.name }` }
                                 stops={ el.name }
                                 isChecked={ el.isChecked }
-                                filterAction={ TicketsStore.filterTickets }
-                                setOnlyOne={ TicketsStore.setOnlyOne }
+                                filterAction={ tickets.ticketStore.filterTickets }
+                                setOnlyOne={ tickets.ticketStore.setOnlyOne }
                             />
                         })
                     }

@@ -4,14 +4,16 @@ import Popup from '../Popup/Popup'
 import logo from "../../assets/company.png";
 import "./TicketItem.css";
 import { observer } from "mobx-react";
-import TicketStore from '../../Stores/ticketStore';
+import { useRootStoreContext } from "../../context/StoreContext";
+
 
 const TicketItem = observer(({ ticket }) => {
 
+    const tickets = useRootStoreContext();
     const [show, setShow] = useState(false);
     const [success, setSuccess] = useState(false);
 
-    const currency = TicketStore.initialCurrency;
+    const currency = tickets.ticketStore.initialCurrency;
     const currentPrice = Math.floor(ticket.price * currency.ratio);
 
     const handleClose = () => {

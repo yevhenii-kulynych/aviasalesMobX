@@ -2,12 +2,14 @@ import React from 'react';
 import Input from '../Input/Input';
 import { Formik, Form } from "formik";
 import * as Yup from 'yup';
-import "./FormComponent.css";
-import FormStore from '../../Stores/formStore'
 import { observer } from "mobx-react";
+import { useRootStoreContext } from "../../context/StoreContext";
+import "./FormComponent.css";
 
 
 const FormComponent = observer(({initialState, changeSuccess, closeHandler }) => {
+
+    const formContext = useRootStoreContext();
 
     return (
         <Formik
@@ -41,7 +43,7 @@ const FormComponent = observer(({initialState, changeSuccess, closeHandler }) =>
             onSubmit={fields => {
 
                 changeSuccess(true)
-                FormStore.setData(fields)
+                formContext.formStore.setData(fields)
             }}
         >
             {

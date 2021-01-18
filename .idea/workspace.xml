@@ -10,6 +10,12 @@
       <change beforePath="$PROJECT_DIR$/src/Stores/formStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stores/formStore.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Stores/ticketStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stores/ticketStore.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CurrencySwitcher/CurrencySwitcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CurrencySwitcher/CurrencySwitcher.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FormComponent/FormComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormComponent/FormComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Popup/Popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Popup/Popup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/StopsFilter/Stopsfilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StopsFilter/Stopsfilter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TicketItem/TicketItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TicketItem/TicketItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TicketList/TicketList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TicketList/TicketList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,6 +128,10 @@
       <workItem from="1610723534707" duration="1147000" />
       <workItem from="1610783480550" duration="2203000" />
       <workItem from="1610790103201" duration="17846000" />
+      <workItem from="1610815284189" duration="960000" />
+      <workItem from="1610956327284" duration="6543000" />
+      <workItem from="1610964205822" duration="5217000" />
+      <workItem from="1610974016364" duration="3179000" />
     </task>
     <servers />
   </component>
